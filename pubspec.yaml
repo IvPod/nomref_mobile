@@ -1,0 +1,47 @@
+name: nomref_mob
+description: Aggregator of weather stations
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  meta: ^1.2.4
+  equatable: ^1.2.5
+  flutter_bloc: ^6.1.1
+  shared_preferences: ^0.5.12+4
+  
+  cupertino_icons: ^1.0.2
+  flutter_map: ^0.12.0
+  dio: ^3.0.10
+  rxdart: ^0.27.2
+  image_picker: ^0.6.7+22
+
+  flutter_native_splash: ^0.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^1.10.3
+  json_serializable: ^3.5.1
+  flutter_launcher_icons: ^0.8.1
+  
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+flutter_icons:
+    android: true
+    ios: true
+    image_path: 'assets/app_icon.png'
+    adaptive_icon_background: 'assets/background.png'
+    adaptive_icon_foreground: 'assets/foreground.png'
+
+flutter_native_splash:
+    image: 'assets/splash_screen.png'
+    color: 'FFFFFF'
